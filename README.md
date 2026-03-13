@@ -1,1 +1,15 @@
-# Data-structure-practical-program-17
+# Data-# Bubble Sort Program
+
+arr = [64, 34, 25, 12, 22, 11, 90]
+
+n = len(arr)
+
+for i in range(n):
+    for j in range(0, n-i-1):
+        if arr[j] > arr[j+1]:
+            # swap
+            arr[j], arr[j+1] = arr[j+1], arr[j]
+
+print("Sorted array:")
+for i in arr:
+    print(i, end=" ")structure-practical-program-17
